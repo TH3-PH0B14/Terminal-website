@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body{
+    background-color: #222222;
+}
+
+.box{
+    width: 90%;
+    height: 85vh;
+    margin: 0 auto;
+    border: 3px solid grey;
+    border-radius: 3px;
+    padding: 20px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.content{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* #scrn{
+    white-space: pre-wrap;
+    color: rgb(177, 139, 181);
+} */
+
+.banner{
+    width: 100%;
+    font-size: 2vh;
+    height: fit-content;
+    color: rgb(255, 125, 125);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.vrs{
+    font-size: 3vh;
+    color: rgb(229, 255, 125);
+    position: absolute;
+}
+
+.help{
+    color: rgb(144, 255, 125);
+}
+
+.inp{
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.textname{
+    flex-grow: 1;
+    background-color: transparent;
+    outline: none;
+    font-size: 15px;
+    color: white;
+    border: none;
+    caret-color: red;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.name{
+    color: rgb(117, 141, 237);
+}
+
+/*** Works on common browsers ***/
+::selection {
+    /* background-color: #352e7e; */
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/*** Mozilla based browsers ***/
+::-moz-selection {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/***For Other Browsers ***/
+::-o-selection {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+::-ms-selection {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/*** For Webkit ***/
+::-webkit-selection {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* .de{
+    color: plum;
+} */
+
+.help-out{
+    width: 100%;
+}
+
+.list-help{
+    color: white;
+}

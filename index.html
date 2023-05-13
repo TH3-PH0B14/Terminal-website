@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Void.X</title>
+    <link rel="icon" type="image/x-icon" href="fav.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="content">
+        <div id="terminal" class="box">
+            <!-- banner start -->
+            <div id="banner" class="banner"></div>
+            <!-- banner end -->
+          
+          <!-- command output start -->
+            <div id="command-output"></div>
+            <!-- command output end -->
+
+            <div class="inp">
+                <p id="root" class="name">user@Void-04:~$ </p> <input id="command-input" autofocus spellcheck="false" class="textname" type="text">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="banr.js"></script>
+    <script src="game.js"></script>
+    <script>
+        function goFullscreen(id) {
+            var element = document.getElementById(id);
+            if (element.mozRequestFullScreen) {
+              element.mozRequestFullScreen();
+            } else if (element.webkitRequestFullScreen) {
+              element.webkitRequestFullScreen();
+            }
+        }
+    </script>
+  
+</body>
+</html>

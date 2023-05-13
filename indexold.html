@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Void.X</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="content">
+        <div id="term" class="box">
+
+
+            <!-- banner start -->
+            <div class="banner">
+<pre>
+██╗   ██╗ ██████╗ ██╗██████╗        ██████╗ ██╗  ██╗
+██║   ██║██╔═══██╗██║██╔══██╗      ██╔═████╗██║  ██║
+██║   ██║██║   ██║██║██║  ██║█████╗██║██╔██║███████║
+╚██╗ ██╔╝██║   ██║██║██║  ██║╚════╝████╔╝██║╚════██║
+ ╚████╔╝ ╚██████╔╝██║██████╔╝      ╚██████╔╝     ██║
+  ╚═══╝   ╚═════╝ ╚═╝╚═════╝        ╚═════╝      ╚═╝  <span class="vrs">v1.0</span>
+
+
+<span class="help">Type 'help' to see list of available commands.</span> 
+</pre>
+            </div>
+            <!-- banner end -->
+
+            <div class="inp">
+                <p class="name">root@Void-04:~$ </p> <input id="cmd" autofocus spellcheck="false" class="textname" type="text">
+            </div>
+            
+
+            <!-- <div class="help-out">
+<pre class="list-help">
+    Welcome to void-04, list of commands:
+
+    ┌──────────────────────────────────┐
+    | ./cheat - run cheats for blooket       !!!---- fake---!!! |  does not work
+    |──────────────────────────────────|
+    | ./games - runs games to play     |
+    |──────────────────────────────────|
+    | ./theme - change theme design    |
+    |──────────────────────────────────|
+    | ./links - fun links to visit     |
+    └──────────────────────────────────┘
+</pre>
+            </div> -->
+
+
+            <!-- <p id="scrn"></p> -->
+        </div>
+    </div>
+
+    <!-- <script>
+        var i = 0;
+        var txt = '';
+        var speed = 10;
+
+        function typeWriter() {
+        if (i < txt.length) {
+            document.getElementById("scrn").innerHTML += txt.charAt(i);
+            i++;
+            setTimeout(typeWriter, speed);
+        }
+        }
+        typeWriter();
+    </script> -->
+    <script>
+        window.setInterval(function() {
+        var elem = document.getElementById('term');
+        elem.scrollTop = elem.scrollHeight;
+        }, 1000);
+
+        document.getElementById('cmd').onkeypress = function(e){
+            if (!e) e = window.event;
+            var keyCode = e.code || e.key;
+            if (keyCode == 'Enter'){
+            // Enter pressed
+            const all = document.querySelectorAll(".inp");
+            all.id = "nope"
+            const txt = document.createElement("div");
+            txt.className = "inp"
+            txt.innerHTML = `
+                <p class="name">root@Void-04:~$ </p> <input id="cmd" autofocus spellcheck="false" class="textname" type="text">
+            `;
+            document.body.appendChild(txt);        
+            return false;
+            }
+        }
+    </script>
+    <!-- <span class="de">/tmp/home/files</span> -->
+</body>
+</html>
